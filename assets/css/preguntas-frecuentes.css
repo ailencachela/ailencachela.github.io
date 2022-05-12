@@ -1,0 +1,12 @@
+.grilla2 {
+  padding: 60px;
+  background-color: #f1d0b1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 720px) {
+  .grilla2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
