@@ -54,30 +54,22 @@ body {
   }
 }
 
-.main__grid--welcomeDesign1 {
+@mixin main__grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-items: space-around;
+}
+
+.main__grid--welcomeDesign1 {
+  @include main__grid;
   gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 720px) {
   .main__grid--welcomeDesign1 {
-    flex-direction: row;
-  }
-}
-
-.main__grid--welcomeDesign2 {
-  /* min-height: 100vh; */
-  width: 90%;
-  margin: 0 auto;
-  justify-items: space-around;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media screen and (min-width: 720px) {
-  .main__grid--welcomeDesign2 {
     flex-direction: row;
   }
 }
@@ -106,6 +98,13 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   grid-column: 1;
   grid-row: 1;
+
+  &--animation {
+    @extend .main__text--index;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
 }
 
 .main__text--italic {
@@ -225,10 +224,21 @@ ul li {
   max-width: max-content;
 }
 
-.footer__title {
+@mixin footer__title {
   background-color: $background-pink;
   text-size-adjust: 10px;
   border-radius: 30px;
+}
+
+@each $titulo, $background-color in $footer__titles__backgrounds {
+  .footer__title--#{$titulo} {
+    @include footer__title;
+    background-color: $background-color;
+  }
+}
+
+.footer__instagramText {
+  background-color: map-get($map: $footer__titles__backgrounds, $key: instagram);
 }
 
 .footer__svg {
