@@ -47,22 +47,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 2rem; }
+  justify-items: space-around;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto; }
 
 @media screen and (min-width: 720px) {
   .main__grid--welcomeDesign1 {
-    flex-direction: row; } }
-
-.main__grid--welcomeDesign2 {
-  /* min-height: 100vh; */
-  width: 90%;
-  margin: 0 auto;
-  justify-items: space-around;
-  display: flex;
-  flex-wrap: wrap; }
-
-@media screen and (min-width: 720px) {
-  .main__grid--welcomeDesign2 {
     flex-direction: row; } }
 
 .main__container--animation {
@@ -79,12 +70,16 @@ body {
     width: 100%; } }
 
 /* -------TEXTO INDEX ------- */
-.main__text--index {
+.main__text--index, .main__text--index--animation {
   padding: 5px;
   margin: 5px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   grid-column: 1;
   grid-row: 1; }
+  .main__text--index--animation {
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: slidein; }
 
 .main__text--italic {
   font-style: italic; }
@@ -184,10 +179,26 @@ ul li {
   border-radius: 10px;
   max-width: max-content; }
 
-.footer__title {
+.footer__title--local {
   background-color: #f7ccd9;
   text-size-adjust: 10px;
-  border-radius: 30px; }
+  border-radius: 30px;
+  background-color: #ff8aad; }
+
+.footer__title--instagram {
+  background-color: #f7ccd9;
+  text-size-adjust: 10px;
+  border-radius: 30px;
+  background-color: #ff487f; }
+
+.footer__title--contactanos {
+  background-color: #f7ccd9;
+  text-size-adjust: 10px;
+  border-radius: 30px;
+  background-color: #ff1d61; }
+
+.footer__instagramText {
+  background-color: #ff487f; }
 
 .footer__svg {
   width: 25px; }
