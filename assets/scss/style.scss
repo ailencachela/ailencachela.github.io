@@ -43,7 +43,6 @@ body {
 /* ------- GRIDS ------- */
 .main__grid--welcome {
   padding: 60px;
-  background-image: $background-gradient;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -187,7 +186,6 @@ body {
 /* ------- FOOTER ------- */
 .footer__gridDesign {
   padding: 60px;
-  background-image: repeating-linear-gradient($background-pink, white);
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr;
