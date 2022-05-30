@@ -179,6 +179,11 @@ ul li {
   border-radius: 10px;
   max-width: max-content; }
 
+.footer__title {
+  background-color: #f7ccd9;
+  text-size-adjust: 10px;
+  border-radius: 30px; }
+
 .footer__title--local {
   background-color: #f7ccd9;
   text-size-adjust: 10px;
