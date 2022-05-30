@@ -184,6 +184,27 @@ ul li {
   text-size-adjust: 10px;
   border-radius: 30px; }
 
+.footer__title--local {
+  background-color: #f7ccd9;
+  text-size-adjust: 10px;
+  border-radius: 30px;
+  background-color: #ff8aad; }
+
+.footer__title--instagram {
+  background-color: #f7ccd9;
+  text-size-adjust: 10px;
+  border-radius: 30px;
+  background-color: #ff487f; }
+
+.footer__title--contactanos {
+  background-color: #f7ccd9;
+  text-size-adjust: 10px;
+  border-radius: 30px;
+  background-color: #ff1d61; }
+
+.footer__instagramText {
+  background-color: #ff487f; }
+
 .footer__svg {
   width: 25px; }
 

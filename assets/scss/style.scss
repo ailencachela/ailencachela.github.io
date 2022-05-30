@@ -230,6 +230,17 @@ ul li {
   border-radius: 30px;
 }
 
+@each $titulo, $background-color in $footer__titles__backgrounds {
+  .footer__title--#{$titulo} {
+    @include footer__title;
+    background-color: $background-color;
+  }
+}
+
+.footer__instagramText {
+  background-color: map-get($map: $footer__titles__backgrounds, $key: instagram);
+}
+
 .footer__svg {
   width: 25px;
 }
